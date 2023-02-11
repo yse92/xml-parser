@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+  <xs:element name="Bank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Branch">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="adress" type="xs:string" />
+              <xs:element name="phone" type="xs:string" />
+              <xs:element name="Employees">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Employee">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="firstName" type="xs:string" />
+                          <xs:element name="lastName" type="xs:string" />
+                          <xs:element name="salary" type="xs:float" />
+                          <xs:element name="position" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:unsignedInt" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Customers">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Customer">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="firstName" type="xs:string" />
+                          <xs:element name="lastName" type="xs:string" />
+                          <xs:element name="phone" type="xs:string" />
+                          <xs:element name="Login">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="name" type="xs:string" />
+                                <xs:element name="password" type="xs:string" />
+                                <xs:element name="Account">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="balance" type="xs:float" />
+                                      <xs:element name="isActive" type="xs:unsignedByte" />
+                                    </xs:sequence>
+                                    <xs:attribute name="accountID" type="xs:unsignedInt" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:unsignedInt" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:unsignedInt" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="branchID" type="xs:unsignedInt" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

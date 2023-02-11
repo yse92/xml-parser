@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bank>
+    <Branch branchID="1">
+        <adress>Kyiv, Stepana Bandery avenue, 18</adress>
+        <phone>044-212-12-12</phone>
+        <Employees>
+            <Employee id="1">
+                <firstName>Alex</firstName>
+                <lastName>Williams</lastName>
+                <salary>24000</salary>
+                <position>Loan processor</position>
+            </Employee>
+        </Employees>
+        <Customers>
+            <Customer id="1">
+                <firstName>Yaroslav</firstName>
+                <lastName>Moroz</lastName>
+                <phone>+380952725859</phone>
+                <Login id="1">
+                    <name>yarikmor92</name>
+                    <password>12345zp</password>
+                    <Account accountID="1">
+                        <balance>54000</balance>
+                        <isActive>1</isActive>
+                    </Account>
+                </Login>
+            </Customer>
+            <Customer id="3">
+                <firstName>Katya</firstName>
+                <lastName>Simonenko</lastName>
+                <phone>+380639323821</phone>
+                <Login id="1">
+                    <name>katyuhadp</name>
+                    <password>kate1111</password>
+                    <Account accountID="1">
+                        <balance>47000</balance>
+                        <isActive>1</isActive>
+                    </Account>
+                </Login>
+            </Customer>
+        </Customers>
+    </Branch>
+    <Branch branchID="2">
+        <adress>Dnipro, Korolenka street, 6</adress>
+        <phone>044-247-08-08</phone>
+        <Employees>
+            <Employee id="3">
+                <firstName>Jennifer</firstName>
+                <lastName>Evans</lastName>
+                <salary>20000</salary>
+                <position>Loan processor</position>
+            </Employee>
+        </Employees>
+        <Customers>
+            <Customer id="2">
+                <firstName>Igor</firstName>
+                <lastName>Stankevich</lastName>
+                <phone>+380930124454</phone>
+                <Login id="2">
+                    <name>igorstan94</name>
+                    <password>igorst123</password>
+                    <Account accountID="2">
+                        <balance>12000</balance>
+                        <isActive>0</isActive>
+                    </Account>
+                </Login>
+            </Customer>
+            <Customer id="4">
+                <firstName>Ivan</firstName>
+                <lastName>Chuprina</lastName>
+                <phone>+380662785455</phone>
+                <Login id="4">
+                    <name>ivanchup95</name>
+                    <password>ivanchp15</password>
+                    <Account accountID="4">
+                        <balance>24000</balance>
+                        <isActive>1</isActive>
+                    </Account>
+                </Login>
+            </Customer>
+        </Customers>
+    </Branch>
+    <Branch branchID="3">
+        <adress>Kharkiv, Sumska street, 14</adress>
+        <phone>057-269-03-04</phone>
+        <Employees>
+            <Employee id="2">
+                <firstName>George</firstName>
+                <lastName>Davis</lastName>
+                <salary>22000</salary>
+                <position>Mortgage consultant</position>
+            </Employee>
+        </Employees>
+    </Branch>
+    <Branch branchID="4">
+        <adress>Kyiv, Antonovycha street, 7</adress>
+        <phone>044-212-12-12</phone>
+        <Employees>
+            <Employee id="4">
+                <firstName>James</firstName>
+                <lastName>Joyce</lastName>
+                <salary>18000</salary>
+                <position>Mortgage consultant</position>
+            </Employee>
+        </Employees>
+        <Customers>
+            <Customer id="5">
+                <firstName>Vitaliy</firstName>
+                <lastName>Koval</lastName>
+                <phone>+380508580105</phone>
+                <Login id="5">
+                    <name>vitalikdpua</name>
+                    <password>vital120293</password>
+                    <Account accountID="5">
+                        <balance>45000</balance>
+                        <isActive>1</isActive>
+                    </Account>
+                </Login>
+            </Customer>
+        </Customers>
+    </Branch>
+</Bank>
